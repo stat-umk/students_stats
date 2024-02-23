@@ -24,9 +24,9 @@ font-family: 'Lato';
 """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
-stac = pd.read_excel(r'Dane/Część 2/Merged/stacjonarne.xlsx', index_col = [0, 1, 2], header = [0, 1])
-nstac = pd.read_excel(r'Dane/Część 2/Merged/niestacjonarne.xlsx', index_col = [0, 1, 2], header = [0, 1])
-razem = pd.read_excel(r'Dane/Część 2/Merged/razem.xlsx', index_col = [0, 1, 2], header = [0, 1])
+stac = pd.read_excel(r'Dane/stacjonarne.xlsx', index_col = [0, 1, 2], header = [0, 1])
+nstac = pd.read_excel(r'Dane/niestacjonarne.xlsx', index_col = [0, 1, 2], header = [0, 1])
+razem = pd.read_excel(r'Dane/razem.xlsx', index_col = [0, 1, 2], header = [0, 1])
 
 data_dict = {'Ogółem': razem, 'Stacjonarne': stac, 'Niestacjonarne': nstac}
 
