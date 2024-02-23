@@ -3,7 +3,7 @@ import streamlit as st
 
 
 ##-------------------------------------------------
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_title = 'Ile osób wybiera UMK?')
 left_co, cent_co,last_co = st.columns([.2, .6, .2])
 with cent_co:
     st.image(r'Wykresy/logo-umk.png')
