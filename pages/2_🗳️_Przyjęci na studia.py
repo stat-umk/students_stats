@@ -32,6 +32,7 @@ data_pl = data_pl[data_pl['czy_przyjety'] == 'admitted']
 
 ##----------MAPKI OGÓŁEM
 
+st.markdown('W poniższej części za przyjęcie na studia będziemy uznawać każdą rejestrację w systemie IRK, która została rozpatrzona pozytywnie.')
 title = '<p style="font-family:lato; color:#0050AA; font-size: 30px;"><b>Liczba osób przyjętych na studia na UMK z uwzględnieniem zamieszkiwanego województwa</b></p>'
 st.markdown(title, unsafe_allow_html=True)    
 left, cen, right = st.columns(3)
